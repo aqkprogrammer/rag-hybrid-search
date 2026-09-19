@@ -1,0 +1,46 @@
+Expense and Travel Policy
+=========================
+
+Department: Finance
+Owner: Finance Operations
+Version: 2026.1
+
+This policy explains which business expenses Lumora Systems reimburses and how to claim them.
+All expenses must be reasonable, necessary for business, and supported by an itemized receipt.
+
+SUBMITTING EXPENSES
+
+Submit expenses in Expensify within 30 days of the purchase date. Receipts are required for
+every expense above $25. Expenses submitted more than 90 days after purchase will not be
+reimbursed. Approved expenses are reimbursed in the next payroll cycle.
+
+APPROVAL LIMITS
+
+Managers can approve individual expenses up to $2,500. Expenses between $2,500 and $10,000
+require approval from the department head. Anything above $10,000 must be approved by the CFO
+and requires a purchase order.
+
+TRAVEL BOOKING
+
+All flights and hotels must be booked through Navan, the corporate travel platform. Economy class
+is required for flights shorter than 6 hours. Premium economy may be booked for flights of 6 hours
+or longer. Business class requires VP approval.
+
+Hotel costs are reimbursed up to $250 per night in standard cities and up to $350 per night in
+high-cost cities such as New York, San Francisco, London and Zurich.
+
+MEALS AND PER DIEM
+
+While traveling, meals are reimbursed up to a daily limit of $75. Alcohol is not reimbursable
+except at approved client entertainment events. Team meals require the most senior attendee to
+pay and submit the expense.
+
+NON-REIMBURSABLE EXPENSES
+
+Personal entertainment, traffic and parking fines, upgrades not approved in advance, and
+expenses for family members traveling with the employee are not reimbursed.
+
+CORPORATE CARDS
+
+Employees who travel more than four times a year may request a corporate card. Corporate card
+transactions must be reconciled in Expensify within 15 days of the statement date.

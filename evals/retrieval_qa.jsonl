@@ -1,0 +1,34 @@
+{"question": "How many unused vacation days roll over to the next year?", "source": "hr/pto-and-leave-policy.md", "answer_contains": ["carry over up to 5"]}
+{"question": "How much PTO does a full-time employee earn each month?", "source": "hr/pto-and-leave-policy.md", "answer_contains": ["1.75 days"]}
+{"question": "How long is paid leave for a new parent who did not give birth?", "source": "hr/pto-and-leave-policy.md", "answer_contains": ["16 weeks"]}
+{"question": "Do I need a doctor's note when I am ill?", "source": "hr/pto-and-leave-policy.md", "answer_contains": ["doctor's note"]}
+{"question": "How long can I work from abroad without approval?", "source": "hr/remote-work-policy.md", "answer_contains": ["30 days"]}
+{"question": "What equipment budget do remote employees get for their home setup?", "source": "hr/remote-work-policy.md", "answer_contains": ["$1,000"]}
+{"question": "Who is responsible for updating the public status page during an outage?", "source": "engineering/incident-response-runbook.md", "answer_contains": ["Communications Lead updates the public status page"]}
+{"question": "When is the postmortem write-up due after a major incident?", "source": "engineering/incident-response-runbook.md", "answer_contains": ["5 business days"]}
+{"question": "What command reverts a service to the previous release?", "source": "engineering/deployment-and-rollback-runbook.md", "answer_contains": ["launchpad rollback"]}
+{"question": "What percentage of traffic does a canary get first?", "source": "engineering/deployment-and-rollback-runbook.md", "answer_contains": ["5% of traffic"]}
+{"question": "Can we ship to production on a Friday?", "source": "engineering/deployment-and-rollback-runbook.md", "answer_contains": ["Fridays"]}
+{"question": "How much extra pay do engineers get for being primary on call?", "source": "engineering/on-call-handbook.md", "answer_contains": ["$500"]}
+{"question": "What happens if the primary on-call engineer misses a page?", "source": "engineering/on-call-handbook.md", "answer_contains": ["escalates to the secondary"]}
+{"question": "What is the minimum password length?", "source": "security/information-security-policy.md", "answer_contains": ["14 characters"]}
+{"question": "Where do I report a phishing email?", "source": "security/information-security-policy.md", "answer_contains": ["security@lumora.example"]}
+{"question": "How quickly are accounts disabled when someone is fired?", "source": "security/access-management-and-offboarding.html", "answer_contains": ["within 1 hour"]}
+{"question": "How often do service account keys need to be rotated?", "source": "security/access-management-and-offboarding.html", "answer_contains": ["90 days"]}
+{"question": "What is the nightly hotel cap in expensive cities like London?", "source": "finance/expense-and-travel-policy.txt", "answer_contains": ["$350"]}
+{"question": "Who must sign off on a $5,000 purchase?", "source": "finance/expense-and-travel-policy.txt", "answer_contains": ["department head"]}
+{"question": "When do I qualify for premium economy seats?", "source": "finance/expense-and-travel-policy.txt", "answer_contains": ["Premium economy"]}
+{"question": "How often do we get new laptops?", "source": "it/laptop-and-byod-standard.pdf", "answer_contains": ["every 3 years"]}
+{"question": "Can I check Slack on my own phone?", "source": "it/laptop-and-byod-standard.pdf", "answer_contains": ["Personal phones"]}
+{"question": "What is Gatekeeper used for?", "source": "security/access-management-and-offboarding.html", "answer_contains": ["Gatekeeper tool"]}
+{"question": "Kandji", "source": "it/laptop-and-byod-standard.pdf", "answer_contains": ["Kandji"]}
+{"question": "Which tool do we book flights in?", "source": "finance/expense-and-travel-policy.txt", "answer_contains": ["Navan"]}
+{"question": "1Password", "source": "security/information-security-policy.md", "answer_contains": ["1Password"]}
+{"question": "/incident declare", "source": "engineering/incident-response-runbook.md", "answer_contains": ["/incident declare"]}
+{"question": "SEV3 acknowledgement target", "source": "engineering/incident-response-runbook.md", "answer_contains": ["SEV3"]}
+{"question": "What should I do if my work computer gets stolen?", "source": "it/laptop-and-byod-standard.pdf", "answer_contains": ["remotely wipe"]}
+{"question": "Am I compensated for being woken up by a page at night?", "source": "engineering/on-call-handbook.md", "answer_contains": ["between 22:00 and 07:00"]}
+{"question": "Is booze covered when I travel for work?", "source": "finance/expense-and-travel-policy.txt", "answer_contains": ["Alcohol is not reimbursable"]}
+{"question": "How much time off do I get when a close relative dies?", "source": "hr/pto-and-leave-policy.md", "answer_contains": ["bereavement"]}
+{"question": "What hours must I be online for meetings?", "source": "hr/remote-work-policy.md", "answer_contains": ["10:00 and 14:00"]}
+{"question": "What must be true about database migrations before a deploy?", "source": "engineering/deployment-and-rollback-runbook.md", "answer_contains": ["backwards compatible"]}

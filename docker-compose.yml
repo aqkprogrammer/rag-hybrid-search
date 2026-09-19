@@ -1,0 +1,42 @@
+# `docker compose up --build` -> API + UI on http://localhost:8000, backed by Qdrant.
+# The sample corpus is auto-ingested on first start. Put API keys in .env to use real LLMs.
+services:
+  api:
+    build:
+      context: .
+      args:
+        EXTRAS: ${RAG_EXTRAS:-}          # set RAG_EXTRAS=ml for local embedding/rerank models
+    image: hybrid-rag:latest
+    ports:
+      - "${API_PORT:-8000}:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      VECTOR_STORE: qdrant
+      QDRANT_URL: http://qdrant:6333
+      AUTO_SEED_DIR: /app/sample_docs
+    volumes:
+      - api-data:/app/data
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    restart: unless-stopped
+
+  qdrant:
+    image: qdrant/qdrant:v1.15.4
+    ports:
+      - "${QDRANT_PORT:-6333}:6333"
+    volumes:
+      - qdrant-data:/qdrant/storage
+    healthcheck:
+      # The qdrant image ships without curl/wget; probe the HTTP port with bash.
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/6333 && printf \"GET /readyz HTTP/1.0\\r\\n\\r\\n\" >&3 && grep -q 200 <&3'"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+volumes:
+  api-data:
+  qdrant-data:

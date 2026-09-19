@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hybrid RAG</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><path d='M9 10h14M9 16h10M9 22h6' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>" />
+  <link rel="stylesheet" href="/static/styles.css?v=0.1.0" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <h1>Hybrid RAG</h1>
+        <p class="tagline">Grounded answers with verified citations</p>
+      </div>
+    </div>
+    <div class="status" id="status" title="Service status">
+      <span class="dot"></span><span id="status-text">connecting…</span>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <section class="card">
+        <h2>Documents</h2>
+        <label class="dropzone" id="dropzone" tabindex="0">
+          <input type="file" id="file-input" multiple accept=".md,.markdown,.txt,.pdf,.html,.htm" hidden />
+          <strong>Drop files or click to upload</strong>
+          <span>Markdown · PDF · TXT · HTML</span>
+        </label>
+        <div class="upload-log" id="upload-log" aria-live="polite"></div>
+        <div class="doc-meta"><span id="doc-count">0 documents</span><span id="chunk-count"></span></div>
+        <ul class="doc-list" id="doc-list"></ul>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section class="card ask">
+        <form id="ask-form" autocomplete="off">
+          <div class="ask-row">
+            <textarea id="question" rows="2" maxlength="2000" placeholder="Ask about policies, runbooks, security standards…" required></textarea>
+            <button type="submit" id="ask-btn" class="primary">Ask</button>
+          </div>
+          <div class="options">
+            <div class="segmented" role="radiogroup" aria-label="Retrieval mode">
+              <label><input type="radio" name="mode" value="hybrid" checked /><span>Hybrid</span></label>
+              <label><input type="radio" name="mode" value="dense" /><span>Dense</span></label>
+              <label><input type="radio" name="mode" value="bm25" /><span>BM25</span></label>
+            </div>
+            <label class="opt">Top-k
+              <select id="top-k"><option>3</option><option selected>5</option><option>8</option><option>10</option></select>
+            </label>
+            <label class="opt"><input type="checkbox" id="rerank" checked /> Rerank</label>
+            <label class="opt"><input type="checkbox" id="verify" checked /> Verify citations</label>
+            <label class="opt">Department
+              <select id="department"><option value="">All</option></select>
+            </label>
+          </div>
+        </form>
+        <div class="suggestions" id="suggestions"></div>
+      </section>
+
+      <section class="card answer hidden" id="answer-card">
+        <div class="answer-head">
+          <h2>Answer</h2>
+          <div class="badges" id="badges"></div>
+        </div>
+        <div class="answer-body" id="answer"></div>
+        <div class="claims hidden" id="claims"></div>
+      </section>
+
+      <section class="card hidden" id="sources-card">
+        <h2>Sources</h2>
+        <div class="sources" id="sources"></div>
+      </section>
+
+      <section class="card hidden" id="debug-card">
+        <details>
+          <summary>Retrieval debug <span class="muted" id="debug-summary"></span></summary>
+          <div class="table-wrap"><table id="debug-table"></table></div>
+        </details>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js?v=0.1.0" type="module"></script>
+</body>
+</html>
