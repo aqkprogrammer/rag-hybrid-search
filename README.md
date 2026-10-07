@@ -7,6 +7,8 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
+![Tour: a grounded answer with verified citations, then a refusal when the documents do not contain the answer](docs/screenshots/tour.webp)
+
 Most RAG demos stop at "embed, top-k, stuff the prompt". This project covers the parts a production
 system needs on top of that:
 
